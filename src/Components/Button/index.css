@@ -6,11 +6,12 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.35s;
-  background-color: rgba(247, 159, 53, 0.676);
-  margin: 10px;
+  background-color: rgb(254, 84, 84);
+  margin: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.398);
 }
 
 .Button:hover {
-  filter: saturate(0.6);
+  filter: saturate(0.8);
 }
 

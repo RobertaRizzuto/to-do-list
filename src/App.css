@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
 .App {
   text-align: center;
   display: flex;
@@ -5,9 +6,39 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/premium-photo/top-view-wood-office-desk-table-flat-lay-workspace_35380-2875.jpg?w=2000);
 }
 
-.to-do-list{
-  width: 30%;
-  background-color: rgba(0, 0, 0, 0.216);
+.to-do-list {
+  font-family: "Cabin Sketch", cursive;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: scroll;
+  gap: 10px;
+}
+.to-do-list-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.398);
+  border-radius: 20px;
+  width: 40%;
+  height: 60%;
+  background-image: url(./Components/ToDoList/notepadpage1.png);
+  background-position: center;
+ background-size: cover;
+  background-repeat: no-repeat;
+}
+.to-do-list-item span {
+  font-family: "Cabin Sketch", cursive;
+  padding: 0 2px;
+  background-color: #e4dacdd7;
+}
+
+.input:checked + span {
+  text-decoration: line-through;
 }
