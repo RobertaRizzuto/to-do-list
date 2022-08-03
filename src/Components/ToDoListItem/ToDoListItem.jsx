@@ -1,16 +1,11 @@
+import "./index.css";
 
-import "./index.css"
-
-
-const ToDoListItem =({children})=>{
-
-    return (
-        
-            <li className="to-do-list-item">
-              {children}
-            </li>
-          )
-    
-}
+const ToDoListItem = ({ children, id }) => {
+  return (
+    <li className="to-do-list-item" id={id}>
+      {children}
+    </li>
+  );
+};
 
 export default ToDoListItem;

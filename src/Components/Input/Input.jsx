@@ -1,9 +1,11 @@
 import "./index.css";
 
-const Input = ({ placeholder, setInput,type }) => {
-  const onChange = (e) => setInput(e.target.value); 
+const Input = ({ placeholder, setInputValue, type }) => {
+  const onChange = (e) =>
+     setInputValue(e.target.value.trim());
   return (
-    <input type={type}
+    <input
+      type={type}
       onChange={onChange}
       placeholder={placeholder}
       className="input"
